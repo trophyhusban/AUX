@@ -12,7 +12,12 @@ public class inkTestingScript : MonoBehaviour
     public Text textPrefab;
     public Button buttonPrefab;
 
-    
+    public string destination;
+    public string musicSpeed;
+    public string musicSex;
+    public string musicVibe;
+    public string passenger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,11 +49,14 @@ public class inkTestingScript : MonoBehaviour
             choiceButton.transform.SetParent(this.transform, false);
             Text choiceText = choiceButton.GetComponentInChildren<Text>();
             choiceText.text = choice.text;
+            choiceText.fontSize = 24;
 
             choiceButton.onClick.AddListener(delegate { 
                 chooseStoryChoice(choice);
             });
         }
+
+        updateVariables();
     }
 
     void eraseUI() 
@@ -67,8 +75,6 @@ public class inkTestingScript : MonoBehaviour
         {
             text = story.ContinueMaximally();
         }
-
-        Debug.Log(text);
         
         return text;
     }
@@ -77,5 +83,24 @@ public class inkTestingScript : MonoBehaviour
     {
         story.ChooseChoiceIndex(choice.index);
         refreshUI();
+    }
+
+    void updateVariables() 
+    {
+        // each of these varibles start as "none" and become one of two things
+
+        // either "far" or "familiar"
+        destination = story.variablesState["destination"].ToString();
+
+        // either "slow" or "fast"
+        musicSpeed = story.variablesState["musicSpeed"].ToString();
+
+        // either "straight" or "gay"
+        musicSex = story.variablesState["musicSex"].ToString();
+
+        // either "happy" or "sad"
+        musicVibe = story.variablesState["musicVibe"].ToString();
+
+        passenger = story.variablesState["passenger"].ToString();
     }
 }

@@ -312,8 +312,8 @@ MonoBehaviour:
     m_Bottom: 40
   m_ChildAlignment: 1
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -334,6 +334,11 @@ MonoBehaviour:
   inkJSON: {fileID: 4900000, guid: 0712ba9c260ede44f8a8c10e36576f63, type: 3}
   textPrefab: {fileID: 7905464615271200822, guid: 2e5a61412a53bd94f9f50d9dc195bd3b, type: 3}
   buttonPrefab: {fileID: 8856680415989567151, guid: b59bb8dcaaa25464ba299ae0419dbc1d, type: 3}
+  destination: 
+  musicSpeed: 
+  musicSex: 
+  musicVibe: 
+  passenger: 
 --- !u!114 &1913394546
 MonoBehaviour:
   m_ObjectHideFlags: 0
