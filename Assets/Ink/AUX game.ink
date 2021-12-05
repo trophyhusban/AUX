@@ -9,7 +9,7 @@ Tonight, Isaac was going somewhere
 
 * [far.] 
 ~ destination = "far"
-    They hadn't been there before, so they're using Google Maps. They're a confident driver, so they weren't too worried about getting there. #far
+    They hadn't been there before, so they're using Google Maps. They were a confident driver, so they weren't too worried about getting there. #far
 * [familiar.] 
 ~ destination = "familiar"
     This route has been burned into their memory by countless nights on the freeway, all darkness and reflected headlights.
@@ -101,14 +101,14 @@ Isaac had known Mordechai for basically their entire life, but they were never c
 * [THE END] -> play_again
 
 == lover_far ==
-Mordechai had just moved to a new place, and needed help getting there. Isaac's car was full to the brim with boxes. Mordechai and Isaac had spent half of the day moving all of his stuff into the car. They still had an hour to go until reaching their destination.
+Mordechai had just moved to a new place and needed help getting there. Isaac's car was full to the brim with boxes. Mordechai and Isaac had spent half of the day moving all of his stuff into the car. They still had an hour to go until reaching their destination.
     {musicVibe == "happy": Even though he was going to go so far away, Isaac was happy to see him go. He always said that their small town made him clausterphobic. Tonight, the two sang happy songs songs together, the need for music outweighing the need for conversation. When they got there, Isaac anticipated a heavy conversation about the state of their relationship. They didn't know exactly what to think about the whole situation, but they didn't want to think about it yet. Right now, the only thing that mattered was the way their voice sounded with their boyfriend's.}
     {musicVibe == "sad": Neither of them spoke over the music. Isaac didn't dare look over at Mordechai. A scene of tomorrow afternoon replayed in their mind: Isaac standing in the doorway, keys in hand, Mordechai slowly running out of ways to delay his "goodbye." Uncertainty blotted out Isaac's future, obscuring it from view. Eventually, they imagined, the water must run clear and things would make sense again.}
     
 * [THE END] -> play_again
 
 == lover_familiar ==
-Mordechai had asked Isaac to move in with him, and they were not able to provide them with an answer yet. A million years of Mordechai stretched out in front of Isaac, well informed by the detailed descriptions Mordechai provided them. They drove through time and witnessed it all.
+Mordechai had asked Isaac to move in with him, but they were not able to provide them with an answer yet. A million years of Mordechai stretched out in front of Isaac, well informed by the detailed descriptions Mordechai provided them. They drove through time and witnessed it all.
     {musicSpeed == "slow": It was late, but Isaac wasn't planning on spending the night. They would rather drive home at this hour than hear Mordechai pitch their future to them any more. Isaac imagined Mordechai's manerisms developing into mirages, clouding the reasons they really did love him. If they said no, could they continue dating, or was this a test that they would fail? Isaac glanced at Mordechai, who had said nothing for a very long time, and realized that just how far away they were from him.}
     {musicSpeed == "fast": Warm lighting eveloped their future, which rested on the foundation of their relationship. Isaac hadn't considered it before, but once they gave it enough though, there was no reason they shouldn't move in with him. Isaac began imagining their return to Mordechai's house with all their stuff. They imagined waking up before Mordechai and making him a pot of coffee. They imagined having their parents over for Passover. Isaac and Mordechai lead the ceremony as their families sit crammed together at their kitchen table, drinking, singing, and remembering together.}
     
@@ -116,6 +116,5 @@ Mordechai had asked Isaac to move in with him, and they were not able to provide
 
 == play_again ==
 <size=48>THE END
-\-\-\-\-
 Ardent Eliot Reinhard and Carey Wang</size>
 -> END

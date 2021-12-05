@@ -11,6 +11,7 @@ public class inkTestingScript : MonoBehaviour
 
     public Text textPrefab;
     public Button buttonPrefab;
+    public Font buttonFont;
 
     public string destination;
     public string musicSpeed;
@@ -50,6 +51,7 @@ public class inkTestingScript : MonoBehaviour
             Text choiceText = choiceButton.GetComponentInChildren<Text>();
             choiceText.text = choice.text;
             choiceText.fontSize = 24;
+            choiceText.font = buttonFont;
 
             choiceButton.onClick.AddListener(delegate { 
                 chooseStoryChoice(choice);
@@ -71,9 +73,13 @@ public class inkTestingScript : MonoBehaviour
     {
         string text = "";
 
-        if(story.canContinue) 
+        while(story.canContinue) 
         {
-            text = story.ContinueMaximally();
+            text += story.Continue() + "\n";
+            if (text == "\n\n")
+            {
+                text = "";
+            }
         }
         
         return text;
