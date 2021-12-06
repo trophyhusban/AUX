@@ -52,6 +52,7 @@ public class inkTestingScript : MonoBehaviour
             choiceText.text = choice.text;
             choiceText.fontSize = 24;
             choiceText.font = buttonFont;
+            choiceText.color = Color.black;
 
             choiceButton.onClick.AddListener(delegate { 
                 chooseStoryChoice(choice);
