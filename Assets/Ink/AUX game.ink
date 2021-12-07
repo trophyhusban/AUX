@@ -9,7 +9,7 @@ Tonight, Isaac was going somewhere
 
 * [far.] 
 ~ destination = "far"
-    They hadn't been there before, so they're using Google Maps. They were a confident driver, so they weren't too worried about getting there. #far
+    They hadn't been there before, so they're using Google Maps. They were a confident driver, so they weren't too worried about getting there.
 * [familiar.] 
 ~ destination = "familiar"
     This route has been burned into their memory by countless nights on the freeway, all darkness and reflected headlights.
@@ -25,17 +25,17 @@ Isaac listened to a lot of stuff. Tonight they were playing something
 ~ musicSpeed = "fast"
 - something {musicSpeed} and
 
-* [gay]
-~ musicSex = "gay"
-* [straight]
-~ musicSex = "straight"
-- something {musicSpeed} and {musicSex} and
-
-* [happy.]
+* [happy]
 ~ musicVibe = "happy"
-* [sad.]
+* [sad]
 ~ musicVibe = "sad"
-- something {musicSpeed} and {musicSex} and {musicVibe}.
+- something {musicSpeed} and {musicVibe}
+
+* [gay.]
+~ musicSex = "gay"
+* [straight.]
+~ musicSex = "straight"
+- something {musicSpeed} and {musicVibe} and {musicSex}.
 -> who_are_they_driving
 
 == who_are_they_driving ==
