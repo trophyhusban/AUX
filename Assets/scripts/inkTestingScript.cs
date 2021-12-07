@@ -18,10 +18,37 @@ public class inkTestingScript : MonoBehaviour
     public string musicSex;
     public string musicVibe;
     public string passenger;
+    private FMOD.Studio.EventInstance farSFX;
+    private FMOD.Studio.EventInstance farSFX2;
+    private bool farSFXIsPlaying = false;
+    private FMOD.Studio.EventInstance slowBeat;
+    private FMOD.Studio.EventInstance fastBeat;
+    bool beatIsPlaying = false;
+    private FMOD.Studio.EventInstance straightBGM;
+    private FMOD.Studio.EventInstance gayBGM;
+    bool musicSexIsPlaying = false;
+    private FMOD.Studio.EventInstance happyMusic;
+    private FMOD.Studio.EventInstance sadMusic;
+    bool musicVibeIsPlaying = false;
+
+    //private bool farSFX2IsPlaying = false;
+
+    //FMOD.Studio.PLAYBACK_STATE playbackState;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        farSFX = FMODUnity.RuntimeManager.CreateInstance("event:/carStart");
+        farSFX2 = FMODUnity.RuntimeManager.CreateInstance("event:/carStart2");
+        slowBeat = FMODUnity.RuntimeManager.CreateInstance("event:/slowBeat");
+        fastBeat = FMODUnity.RuntimeManager.CreateInstance("event:/fastBeat");
+        straightBGM = FMODUnity.RuntimeManager.CreateInstance("event:/straightStems");
+        gayBGM = FMODUnity.RuntimeManager.CreateInstance("event:/gayStems");
+        happyMusic = FMODUnity.RuntimeManager.CreateInstance("event:/HappyMusic");
+        sadMusic = FMODUnity.RuntimeManager.CreateInstance("event:/SadMusic");
+
+
         story = new Story(inkJSON.text);
 
         refreshUI();
@@ -56,6 +83,7 @@ public class inkTestingScript : MonoBehaviour
 
             choiceButton.onClick.AddListener(delegate { 
                 chooseStoryChoice(choice);
+                
             });
         }
 
@@ -98,15 +126,56 @@ public class inkTestingScript : MonoBehaviour
 
         // either "far" or "familiar"
         destination = story.variablesState["destination"].ToString();
+        if(destination == "far" && !farSFXIsPlaying)
+        {
+            farSFX.start();
+            farSFXIsPlaying = true;
+        }
+        else if (destination == "familiar" && !farSFXIsPlaying)
+        {
+            farSFX2.start();
+            farSFXIsPlaying = true;
+        }
+
 
         // either "slow" or "fast"
         musicSpeed = story.variablesState["musicSpeed"].ToString();
+        if (musicSpeed == "slow" && !beatIsPlaying)
+        {
+            slowBeat.start();
+            beatIsPlaying = true;
+        } 
+        else if (musicSpeed == "fast" && !beatIsPlaying)
+        {
+            fastBeat.start();
+            beatIsPlaying = true;
+        }
 
         // either "straight" or "gay"
         musicSex = story.variablesState["musicSex"].ToString();
+        if(musicSex == "straight" && !musicSexIsPlaying)
+        {
+            straightBGM.start();
+            musicSexIsPlaying = true;
+        }
+        else if (musicSex == "gay" && !musicSexIsPlaying)
+        {
+            gayBGM.start();
+            musicSexIsPlaying = true;
+        }
 
         // either "happy" or "sad"
         musicVibe = story.variablesState["musicVibe"].ToString();
+        if(musicVibe == "happy" && !musicVibeIsPlaying)
+        {
+            happyMusic.start();
+            musicVibeIsPlaying = true;
+        }
+        else if (musicVibe == "sad" && !musicVibeIsPlaying)
+        {
+            sadMusic.start();
+            musicVibeIsPlaying = true;
+        }
 
         passenger = story.variablesState["passenger"].ToString();
     }

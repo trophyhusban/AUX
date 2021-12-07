@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2224dc2e-3d32-4ba9-afab-75b52e5bd257}">
+		<property name="assetPath">
+			<value>Clair_de_Lune.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>301.60693750000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e8860bc1-adfb-42c5-b2ac-17576acdeb35}</destination>
+		</relationship>
+	</object>
+</objects>

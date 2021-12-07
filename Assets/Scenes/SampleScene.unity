@@ -207,14 +207,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
+--- !u!114 &519420029
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -334,6 +340,7 @@ MonoBehaviour:
   inkJSON: {fileID: 4900000, guid: 0712ba9c260ede44f8a8c10e36576f63, type: 3}
   textPrefab: {fileID: 7905464615271200822, guid: 2e5a61412a53bd94f9f50d9dc195bd3b, type: 3}
   buttonPrefab: {fileID: 8856680415989567151, guid: b59bb8dcaaa25464ba299ae0419dbc1d, type: 3}
+  buttonFont: {fileID: 0}
   destination: 
   musicSpeed: 
   musicSex: 
