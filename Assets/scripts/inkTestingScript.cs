@@ -13,11 +13,11 @@ public class inkTestingScript : MonoBehaviour
     public Button buttonPrefab;
     public Font buttonFont;
 
-    public string destination;
-    public string musicSpeed;
-    public string musicSex;
-    public string musicVibe;
-    public string passenger;
+    private string destination;
+    private string musicSpeed;
+    private string musicSex;
+    private string musicVibe;
+    private string passenger;
     private FMOD.Studio.EventInstance farSFX;
     private FMOD.Studio.EventInstance farSFX2;
     private bool farSFXIsPlaying = false;

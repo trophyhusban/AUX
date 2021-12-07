@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Aux-game/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637744209388994375
+  lastModified: 637744219771001363
   FileSizes:
   - Name: Desktop
     Value: 2864320
@@ -116,7 +116,7 @@ MonoBehaviour:
   Path: Aux-game/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637744209389019384
+  lastModified: 637744219771031355
   FileSizes:
   - Name: Desktop
     Value: 1110
@@ -205,7 +205,7 @@ MonoBehaviour:
   - {fileID: -8240903670506372777}
   StringsBanks:
   - {fileID: -5787174777191161319}
-  cacheTime: 637744209389254428
+  cacheTime: 637744219771131374
   cacheVersion: 10
 --- !u!114 &181909748694665005
 MonoBehaviour:
@@ -303,7 +303,7 @@ MonoBehaviour:
   Path: Aux-game/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637744209389254428
+  lastModified: 637744219771131374
   FileSizes:
   - Name: Desktop
     Value: 154880
